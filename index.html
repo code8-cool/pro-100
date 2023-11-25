@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Guess The Word</title>
+	<title>Chat App</title>
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="game.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+ 
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="chat.js"></script>
+	<script src="chat_room.js"></script>
+	<script src="style.css"></script>
 </head>
+
 <body>
-
-<h4 id="player1_name"></h4> <span id="player1_score"></span>
-<br>
-<h4 id="player2_name"></h4> <span id="player2_score"></span>
-
-<div class="container">
 	<center>
-		<h2 style="color: white;">The Math Quiz Game!</h2>
-		<h3 id="player_question"></h3>
-		<h3 id="player_answer"></h3>
-		<div id="output" class="col-lg-6"> </div>
-		<br>
-		<br>
-		<h4>Number 1</h4>
-		<input type="text" id="number1" class="form-control" placeholder="Number 1">
-		<br>
-		<h4>Number 1</h4>
-		<input type="text" id="number2" class="form-control" placeholder="Number 2">
-		<br>
-		<button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+		<h1 class="header">
+			Chat App <sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+			<img src="logo.png" class="logo">
+			<h3>See what is happening in the world right now</h3>
+			<h4>Join The Chat App today</h4>
+			<div class="form-group">
+				<label>User Name:</label>
+                
+				
+				<input type="text" id="user_name" class="form-control" placeholder="User Name">
+				<input id="user_name" class="form-control" placeholder="User Name">
+			    
+			</div>
+		 	
+			<button id="login_button" class="btn btn-primary" onclick="addUser();">Log in</button>
+		    <button id="adding_room" class="button" onclick="addRoom()"></button>
+			<button id="logout" onclick="addUser()"></button>
+			<br><br>
+		</div>
 	</center>
-</div>
-      
-<script src="game_page.js"></script>
+	
 </body>
+
 </html>
