@@ -3,6 +3,7 @@
 const firebaseConfig = {
     apiKey: "AIzaSyAgllVy1UodIMbXDDaSWx9H9uWogsewvas",
     authDomain: "kwitter-pro-6705f.firebaseapp.com",
+    databaseURL: "https://kwitter-pro-6705f-default-rtdb.firebaseio.com",
     projectId: "kwitter-pro-6705f",
     storageBucket: "kwitter-pro-6705f.appspot.com",
     messagingSenderId: "649091406287",

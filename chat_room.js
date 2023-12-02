@@ -22,3 +22,7 @@ function redirectToRoomName()
   localStorage.setItem("room_name", room_name);
     window.location = "chat_room.html";
 }
+logout()
+{
+window.location = "index.html"
+}

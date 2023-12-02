@@ -96,3 +96,8 @@ background-image: linear-gradient(to right top, red, red, orange, orange, yellow
 {
     color: rgb(187, 255, 39);
 }
+.sending
+{
+color: darkgreen;
+width:40px;
+}
